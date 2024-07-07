@@ -3,18 +3,18 @@ kind: Deployment
 metadata:
   name: application
   labels:
-    app: personnel
+    app: employees
     component: userinterface
 spec:
   selector:
     matchLabels:
-      app: personnel
+      app: employees
       component: userinterface
   replicas: 3
   template:
     metadata:
       labels:
-        app: personnel
+        app: employees
         component: userinterface
     spec:
       containers:

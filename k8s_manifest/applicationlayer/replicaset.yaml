@@ -3,17 +3,17 @@ kind: ReplicaSet
 metadata:
   name: application
   labels:
-    app: personnel
+    app: employees
     component: userinterface
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: personnel
+      app: employees
   template:
     metadata:
       labels:
-        app: personnel
+        app: employees
         component: userinterface
     spec:
       containers:

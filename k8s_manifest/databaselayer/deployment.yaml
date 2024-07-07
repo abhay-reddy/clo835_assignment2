@@ -1,18 +1,18 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: database
+  name: mysql
   labels:
-    app: database
+    app: mysql
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: database
+      app: mysql
   template:
     metadata:
       labels:
-        app: database
+        app: mysql
         component: db-backend
     spec:
       containers:

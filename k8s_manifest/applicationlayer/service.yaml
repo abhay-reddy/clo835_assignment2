@@ -3,11 +3,11 @@ kind: Service
 metadata:
   name: application
   labels:
-    app: personnel
+    app: employees
     component: userinterface
 spec:
   ports:
     - port: 8080
   selector:
-    app: personnel
+    app: employees
     component: userinterface
