@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: application
+  labels:
+    app: personnel
+    component: userinterface
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: personnel
+  template:
+    metadata:
+      labels:
+        app: personnel
+        component: userinterface
+    spec:
+      containers:
+        - name: app-cont
+          image: 671296973118.dkr.ecr.us-east-1.amazonaws.com/clo835-ecr:latest-app
+          env:
+            - name: DBPWD
+              value: pass
+            - name: DBUSER
+              value: root
+            - name: DBHOST
+              value: "mysql.database.svc.cluster.local"
+            - name: DBPORT
+              value: "3306"
+          ports:
+            - containerPort: 8080
