@@ -1,7 +1,1 @@
-**/.terraform/*
-**/.terraform*
-*.tfstate
-*.tfstate.*
-*.pub*
-*-dev*
 terraform_code/
