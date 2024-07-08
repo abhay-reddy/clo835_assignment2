@@ -23,3 +23,5 @@ spec:
               value: pass
           ports:
             - containerPort: 3306
+      imagePullSecrets:
+      - name: my_ecr_secret      
