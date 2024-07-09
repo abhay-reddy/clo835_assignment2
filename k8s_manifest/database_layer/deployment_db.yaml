@@ -9,6 +9,7 @@ spec:
   selector:
     matchLabels:
       app: mysql
+      component: db-backend
   template:
     metadata:
       labels:
