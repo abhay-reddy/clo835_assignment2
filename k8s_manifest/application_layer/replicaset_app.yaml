@@ -21,9 +21,9 @@ spec:
           image: 671296973118.dkr.ecr.us-east-1.amazonaws.com/clo835-ecr:latest-app
           env:
             - name: DBPWD
-              value: password
+              value: pass
             - name: DBUSER
-              value: administrator
+              value: root
             - name: DBHOST
               value: "mysql.db-ns.svc.cluster.local"
             - name: DBPORT
