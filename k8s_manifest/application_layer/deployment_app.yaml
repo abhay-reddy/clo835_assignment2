@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: application
+  name: application-deployment
   labels:
     app: employees
     component: userinterface
