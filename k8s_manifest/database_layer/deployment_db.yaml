@@ -20,8 +20,6 @@ spec:
         image: 671296973118.dkr.ecr.us-east-1.amazonaws.com/clo835-ecr:latest-mysql
         env:
         - name: MYSQL_ROOT_PASSWORD
-          value: pass
+          value: password
         ports:
         - containerPort: 3306
-      imagePullSecrets:
-      - name: myecrsecret  
