@@ -17,7 +17,7 @@ spec:
         component: userinterface
     spec:
       containers:
-        - name: app-cont
+        - name: app-container
           image: 671296973118.dkr.ecr.us-east-1.amazonaws.com/clo835-ecr:latest-app
           env:
             - name: DBPWD
